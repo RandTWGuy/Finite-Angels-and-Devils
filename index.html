@@ -8,12 +8,25 @@
   <body>
     <h1>Finite Angels and Devils!</h1>
 	  <!-- Intro -->
-    This is ARandomTaiwaneseGuy(<a href = https://www.youtube.com/@ARandomTaiwaneseGuy>YT</a>)/
+      This is ARandomTaiwaneseGuy(<a href = https://www.youtube.com/@ARandomTaiwaneseGuy>YT</a>)/
 	  RandTWGuy(Github)'s Finite version of <a href = "https://en.wikipedia.org/wiki/Angel_problem"> the Angels and Devils game </a>.
     <br>
-	  Here, we only consider Angels of power 1, which move like a chess king. After the Angel chooses her starting square, the Devil blocks a square so the Angel can't move there in the future, and the Angel moves one step in any of the eight cardinal directions.
+	Here, we only consider Angels of power 1, which moves like a chess king. After the Angel chooses her starting square, the Devil blocks a square so the Angel can't move there in the future, and the Angel moves one step in any of the eight cardinal directions.
     The Devil only has a certain amount (the Arsenal) of blocks available. If the Devil is able to trap the Angel, he wins; if he uses up his arsenal, then the Angel wins instead.
     The Arsenal should be determined beforehand by consensus of both players.
+	<hr>
+
+	<!-- Board Size -->
+	<label for = "board_size">Choose Board Size: </label>
+	<input type = "number" id = "board_size" min = "2" max = "20" value = "5">
+	
+	<!-- Arsenal -->
+	<label for = "arsenal">Choose Arsenal Size: </label>
+	<input type = "number" id = "arsenal" min = "1" max = "399" value = "12">
+	
+	<!-- Input Button -->
+	<button id = "inputBtn"></button>
+	
     <!-- Put the canvas here -->
     <canvas id="myCanvas" width="500" height="500" style="border:1px solid #ccc;"></canvas>
     
