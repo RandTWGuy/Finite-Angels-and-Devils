@@ -17,8 +17,8 @@
 	<hr>
 
 	<!-- Board Size -->
-	<label for = "board_size">Choose Board Size: </label>
-	<input type = "number" id = "board_size" min = "2" max = "20" value = "5">
+	<label for = "boardSize">Choose Board Side Length: </label>
+	<input type = "number" id = "boardSize" min = "2" max = "20" value = "5">
 	
 	<!-- Arsenal -->
 	<label for = "arsenal">Choose Arsenal Size: </label>
@@ -28,6 +28,7 @@
 	<button id = "inputBtn">Confirm Input</button>
 	
     <!-- Put the canvas here -->
+	<!-- Must be square -->
     <canvas id="myCanvas" width="500" height="500" style="border:1px solid #ccc;"></canvas>
     
     <script defer>
@@ -35,6 +36,6 @@
     const canvas = document.getElementById('myCanvas');
     const ctx = canvas.getContext('2d');
     </script>
-    
+    <script src = "script.js" defer></script>
   </body>
 </html>
