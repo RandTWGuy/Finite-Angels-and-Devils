@@ -2,10 +2,16 @@
 let margin = 50;
 //drawing/initializing the board
 const drawBoard = function(boardSize){
+  //needed vars
   let canvasWidth = canvas.width;//width = height
   let boardWidth = canvasWidth - (2 * margin);//Width of the actual board
-  let cellSize = boardWidth / boardSize;//Size (width, length) of a single cell
 
+  //clear the canvas
+  ctx.clearRect(0,0,canvasWidth,canvasWidth);
+
+  //Size (width, length) of a single cell
+  let cellSize = boardWidth / boardSize;
+  
   //i in horizontal (x axis)
   for (let i = 0; i < boardSize; i++){
     //j is vertical (y axis)
