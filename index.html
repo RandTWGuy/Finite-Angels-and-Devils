@@ -6,6 +6,22 @@
     </title>
   </head>
   <body>
-    <b>THE DEV IS LAZY AND HASN'T DONE A THING YET</b>
+    <h1>Finite Angels and Devils!</h1>
+	  <!-- Intro -->
+    This is ARandomTaiwaneseGuy(<a href = https://www.youtube.com/@ARandomTaiwaneseGuy>YT</a>)/
+	  RandTWGuy(Github)'s Finite version of <a href = "https://en.wikipedia.org/wiki/Angel_problem"> the Angels and Devils game </a>.
+    <br>
+	  Here, we only consider Angels of power 1, which move like a chess king. After the Angel chooses her starting square, the Devil blocks a square so the Angel can't move there in the future, and the Angel moves one step in any of the eight cardinal directions.
+    The Devil only has a certain amount (the Arsenal) of blocks available. If the Devil is able to trap the Angel, he wins; if he uses up his arsenal, then the Angel wins instead.
+    The Arsenal should be determined beforehand by consensus of both players.
+    <!-- Put the canvas here -->
+    <canvas id="myCanvas" width="500" height="500" style="border:1px solid #ccc;"></canvas>
+    
+    <script defer>
+    // canvas
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+    </script>
+    
   </body>
 </html>
